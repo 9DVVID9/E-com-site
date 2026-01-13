@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">🛒 TechStore</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="catalog.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="page-header">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <h2>Cart Items (<span id="itemCount">0</span>)</h2>
+                <div id="cartItemsContainer">
+                </div>
+            </div>
+
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%):</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$10.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn" disabled>Proceed to Checkout</button>
+                <a href="catalog.html" class="continue-shopping">← Continue Shopping</a>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 TechStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

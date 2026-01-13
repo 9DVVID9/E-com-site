@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Product Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">🛒 TechStore</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="catalog.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html" class="cart-icon">
+                        🛒 Cart
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <a href="catalog.html" class="back-link">← Back to Products</a>
+
+        <div id="productDetailContainer">
+            <div class="loading">Loading product details...</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 TechStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

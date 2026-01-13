@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Login & Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">🛒 TechStore</div>
+            <a href="catalog.html" class="back-link">← Back to Store</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h1>Welcome to TechStore</h1>
+                <p>Login or create an account to continue</p>
+            </div>
+
+            <div class="tab-buttons">
+                <button class="tab-btn active" id="loginTab">Login</button>
+                <button class="tab-btn" id="registerTab">Register</button>
+            </div>
+
+            <div class="forms-container">
+                <div class="form-content active" id="loginForm">
+                    <div class="error-message" id="loginError"></div>
+                    <div class="success-message" id="loginSuccess"></div>
+
+                    <form id="loginFormElement">
+                        <div class="form-group">
+                            <label for="loginUsername">Username</label>
+                            <input type="text" id="loginUsername" name="username" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+
+                    <div class="form-footer">
+                        Don't have an account? <a href="#" id="switchToRegister" class="link">Register here</a>
+                    </div>
+                </div>
+
+                <div class="form-content" id="registerForm">
+                    <div class="error-message" id="registerError"></div>
+                    <div class="success-message" id="registerSuccess"></div>
+
+                    <form id="registerFormElement">
+                        <div class="form-group">
+                            <label for="registerUsername">Username *</label>
+                            <input type="text" id="registerUsername" name="username" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerPassword">Password *</label>
+                            <input type="password" id="registerPassword" name="password" required minlength="6">
+                            <small>Minimum 6 characters</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerConfirmPassword">Confirm Password *</label>
+                            <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerUserType">User Type *</label>
+                            <select id="registerUserType" name="userType" required>
+                                <option value="">Select user type</option>
+                                <option value="user">Regular User</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerName">Full Name</label>
+                            <input type="text" id="registerName" name="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerAddress">Address</label>
+                            <input type="text" id="registerAddress" name="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerPhone">Phone Number</label>
+                            <input type="tel" id="registerPhone" name="phone">
+                        </div>
+
+                        <button type="submit" class="submit-btn">Create Account</button>
+                    </form>
+
+                    <div class="form-footer">
+                        Already have an account? <a href="#" id="switchToLogin" class="link">Login here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
